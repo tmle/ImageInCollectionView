@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		32A6BAF91C5BACE700B5093D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6BAF81C5BACE700B5093D /* AppDelegate.swift */; };
-		32A6BAFB1C5BACE700B5093D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6BAFA1C5BACE700B5093D /* ViewController.swift */; };
 		32A6BAFE1C5BACE800B5093D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A6BAFC1C5BACE800B5093D /* Main.storyboard */; };
 		32A6BB011C5BACE800B5093D /* ImageInCollectionView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32A6BAFF1C5BACE800B5093D /* ImageInCollectionView.xcdatamodeld */; };
 		32A6BB031C5BACE800B5093D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A6BB021C5BACE800B5093D /* Assets.xcassets */; };
 		32A6BB061C5BACE800B5093D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A6BB041C5BACE800B5093D /* LaunchScreen.storyboard */; };
+		32AD85A21C5BB2E9000E3D2B /* AutoGravityCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD85A01C5BB2E9000E3D2B /* AutoGravityCollectionViewController.swift */; };
+		32AD85A31C5BB2E9000E3D2B /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD85A11C5BB2E9000E3D2B /* ImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		32A6BAF51C5BACE700B5093D /* ImageInCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageInCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A6BAF81C5BACE700B5093D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32A6BAFA1C5BACE700B5093D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32A6BAFD1C5BACE800B5093D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32A6BB001C5BACE800B5093D /* ImageInCollectionView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageInCollectionView.xcdatamodel; sourceTree = "<group>"; };
 		32A6BB021C5BACE800B5093D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32A6BB051C5BACE800B5093D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32A6BB071C5BACE800B5093D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AD85A01C5BB2E9000E3D2B /* AutoGravityCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoGravityCollectionViewController.swift; sourceTree = "<group>"; };
+		32AD85A11C5BB2E9000E3D2B /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 		32A6BAF71C5BACE700B5093D /* ImageInCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				32AD85A01C5BB2E9000E3D2B /* AutoGravityCollectionViewController.swift */,
+				32AD85A11C5BB2E9000E3D2B /* ImageCollectionViewCell.swift */,
 				32A6BAF81C5BACE700B5093D /* AppDelegate.swift */,
-				32A6BAFA1C5BACE700B5093D /* ViewController.swift */,
 				32A6BAFC1C5BACE800B5093D /* Main.storyboard */,
 				32A6BB021C5BACE800B5093D /* Assets.xcassets */,
 				32A6BB041C5BACE800B5093D /* LaunchScreen.storyboard */,
@@ -139,7 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A6BB011C5BACE800B5093D /* ImageInCollectionView.xcdatamodeld in Sources */,
-				32A6BAFB1C5BACE700B5093D /* ViewController.swift in Sources */,
+				32AD85A21C5BB2E9000E3D2B /* AutoGravityCollectionViewController.swift in Sources */,
+				32AD85A31C5BB2E9000E3D2B /* ImageCollectionViewCell.swift in Sources */,
 				32A6BAF91C5BACE700B5093D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +256,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImageInCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinhmle.ImageInCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,6 +268,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImageInCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinhmle.ImageInCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +294,7 @@
 				32A6BB0C1C5BACE800B5093D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
