@@ -20,7 +20,8 @@ class AutoGravityCollectionViewController: UICollectionViewController {
         //do_matrix_refresh();
         get_data_from_url("https://pixabay.com/api/?key=103582-ced4be9ff789b472fbfd89dd7&q=yellow+flower&image_type=photo")
         
-        print("source control")
+        // https://itunes.apple.com/ca/app/english-vietnamese-guide-to/id593964156?mt=8
+        //do_matrix_refresh();
 
     }
     
